@@ -22,7 +22,7 @@ WHERE created_at > '2024-11-20' ;
 -- 4. 상품명에 부피 단위인 'ml' 또는 'l'가 포함된 주문을 모두 조회하세요.
 SELECT *
 FROM orders
-WHERE name LIKE('%l') OR name LIKE('%ml');
+WHERE name LIKE '%l%';
 
 -- 5. 10월과 12월에 들어온 주문의 개수를 구하세요(주의: 11월은 포함하지 않습니다).
 SELECT count(*)
